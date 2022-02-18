@@ -1,0 +1,33 @@
+
+PRERUN SYNTAX CHECK
+1.loop through every line in the file
+2. check if the line has a keyword.
+3. if it does, then check if it has anything else,
+4.  if it does, 
+        then return extraWordError or something
+5. if not, 
+    add the line to an array called ActiveLines or something
+    add the keyword position to an array called Keyword-positions #to locate them faster?
+
+RUN
+1. loop through ActiveLines
+2. for each number of line, go to that line and run the function called
+
+2:
+    FOR Prints:
+        check for quotes
+        check for variable
+        check for int 
+        check for float
+
+        if the statement has quotes:
+            print it
+        elif its a stored variable:
+            print its value
+        elif its an int:
+            print it
+        elif its a float:
+            print it
+        else:
+            print "SyntaxError: Input not a recognised value" #something like that
+            error = True
