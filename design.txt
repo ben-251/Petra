@@ -31,4 +31,31 @@ RUN
         else:
             print "SyntaxError: Input not a recognised value" #something like that
             error = True
-			//test change
+	    
+	FOR Variables: #var(var_name,var_value)
+		store new name into array var_names, unless already in var_names
+		def get_value(value):
+			check if the value has quptes
+			check for quotes
+			check for int 
+			check for float
+
+			if the value has quotes:
+			    store as string
+			elif its an int:
+			    store as int
+			elif its a float:
+			    store as float
+			else:
+			     print "SyntaxError: Variable - [variable_name]. "[value] is not a recognised
+			     value" #something like that
+
+		find name from var_names and get_value(value)
+	
+	FOR input: # input(var_name,message)
+		get message from statemnent
+		get_var_name
+		
+		set var_value to input("message")
+		run var(var_name,var_value)
+		
