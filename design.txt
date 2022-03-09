@@ -14,23 +14,12 @@ RUN
 2. for each number of line, go to that line and run the function called
 
 2:
-    FOR Prints:
-        check for quotes
-        check for variable
-        check for int 
-        check for float
-
-        if the statement has quotes:
-            print it
-        elif its a stored variable:
-            print its value
-        elif its an int:
-            print it
-        elif its a float:
-            print it
-        else:
-            print "SyntaxError: Input not a recognised value" #something like that
-            error = True
+	FOR Prints:
+		If a line starts with `say(`
+		check if the last character is `)`
+		set a varible to everything between them
+		send that variable to a `evaluate_expression(exp)` function
+		print the result
 	    
 	FOR Variables: #var(var_name,var_value)
 		store new name into array var_names, unless already in var_names
@@ -59,3 +48,15 @@ RUN
 		set var_value to input("message")
 		run var(var_name,var_value)
 		
+FUNCTION DEFINITIONS
+def evaluate_expression(exp):
+	// each of these shold return the value if true, not running any further code
+	check if string // if it starts and ends with quotes
+	check if number // if every character is a number
+	.
+	.
+	.
+	check if it is in the `vars` dictionary
+	// If all checks have faled
+	print "SyntaxError: Input not a recognised value" #something like that
+	exit()
